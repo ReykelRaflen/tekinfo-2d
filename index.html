@@ -9,7 +9,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
- 
+
 </head>
 
 
@@ -40,8 +40,17 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profile
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+              <li><a class="dropdown-item" href="visimisi.html">Visi Dan Misi</a></li>
+              <li><a class="dropdown-item" href="tujuanstrategis.html">Tujuan Strategis</a></li>
+              <li><a class="dropdown-item" href="sasaran.html">Sasaran Strategis</a></li>
+              <li><a class="dropdown-item" href="struktur.html">Struktur Organisasi</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -72,21 +81,24 @@
     class="carousel slide" data-mdb-ride="carousel" data-mdb-interval="false">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/flat-futuristic-cyber-monday-background_23-2149110073 (Custom).jpg" width="450px" height="650ox" class="d-block w-100" alt="...">
+        <img src="images/flat-futuristic-cyber-monday-background_23-2149110073 (Custom).jpg" width="450px"
+          height="650ox" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item" data-mdb-interval="2000">
-        <img src="images/medium-shot-man-wearing-vr-glasses (Custom).jpg" width="450" height="650px" class="d-block w-100" alt="...">
+        <img src="images/medium-shot-man-wearing-vr-glasses (Custom).jpg" width="450" height="650px"
+          class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="images/minimal-technology-twitch-background_23-2149059940 (Custom).jpg" width="450" height="650px" class="d-block w-100" alt="...">
+        <img src="images/minimal-technology-twitch-background_23-2149059940 (Custom).jpg" width="450" height="650px"
+          class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
@@ -117,7 +129,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="container">
 
     <!-- Card type 1 -->
@@ -344,27 +356,27 @@
   <!-- Animasi Angka -->
   <script>
     function animasiAngka(id, mulai, akhir, durasi) {
-        let elemen = document.getElementById(id);
-        let nilaiSekarang = mulai;
-        let jarak = akhir - mulai;
-        let kenaikan = akhir > mulai ? 1 : -1;
-        let waktuLangkah = Math.abs(Math.floor(durasi / jarak));
+      let elemen = document.getElementById(id);
+      let nilaiSekarang = mulai;
+      let jarak = akhir - mulai;
+      let kenaikan = akhir > mulai ? 1 : -1;
+      let waktuLangkah = Math.abs(Math.floor(durasi / jarak));
 
-        let timer = setInterval(function () {
-            nilaiSekarang += kenaikan;
-            elemen.innerHTML = nilaiSekarang;
-            if (nilaiSekarang === akhir) {
-                clearInterval(timer);
-            }
-        }, waktuLangkah);
+      let timer = setInterval(function () {
+        nilaiSekarang += kenaikan;
+        elemen.innerHTML = nilaiSekarang;
+        if (nilaiSekarang === akhir) {
+          clearInterval(timer);
+        }
+      }, waktuLangkah);
     }
     window.onload = function () {
-        animasiAngka("mahasiswa", 1, 986, 2000); // Dari 1 ke 986 dalam 2 detik
-        animasiAngka("dosen", 1, 73, 2000);      // Dari 1 ke 73 dalam 2 detik
-        animasiAngka("lab", 1, 10, 2000);        // Dari 1 ke 10 dalam 2 detik
-        animasiAngka("prodi", 1, 8, 2000);       // Dari 1 ke 8 dalam 2 detik
+      animasiAngka("mahasiswa", 1, 986, 2000); // Dari 1 ke 986 dalam 2 detik
+      animasiAngka("dosen", 1, 73, 2000);      // Dari 1 ke 73 dalam 2 detik
+      animasiAngka("lab", 1, 10, 2000);        // Dari 1 ke 10 dalam 2 detik
+      animasiAngka("prodi", 1, 8, 2000);       // Dari 1 ke 8 dalam 2 detik
     };
-    </script>
+  </script>
 
 
   <!-- Mitra Kami -->
@@ -415,7 +427,8 @@
           <hr>
           <div class="col-md-6">
             <div class="card">
-              <img src="https://ti.pnp.ac.id/wp-content/uploads/2023/10/pekan-it-scaled.jpg" class="card-img-top" alt="Kegiatan Audit Mutu">
+              <img src="https://ti.pnp.ac.id/wp-content/uploads/2023/10/pekan-it-scaled.jpg" class="card-img-top"
+                alt="Kegiatan Audit Mutu">
               <div class="card-body">
                 <a href="news4.html" class="card-title" style="text-decoration:none">Kegiatan Audit Mutu Internal (AMI)
                   di Jurusan Teknologi Informasi Politeknik Negeri Padang</a>
@@ -425,7 +438,8 @@
           </div>
           <div class="col-md-6">
             <div class="card">
-              <img src="https://ti.pnp.ac.id/wp-content/uploads/2022/06/Kuliah-Umum.jpeg" class="card-img-top" alt="Kegiatan Audit Mutu">
+              <img src="https://ti.pnp.ac.id/wp-content/uploads/2022/06/Kuliah-Umum.jpeg" class="card-img-top"
+                alt="Kegiatan Audit Mutu">
               <div class="card-body">
                 <a href="news4.html" class="card-title" style="text-decoration:none">Kegiatan Audit Mutu Internal (AMI)
                   di Jurusan Teknologi Informasi Politeknik Negeri Padang</a>
@@ -446,7 +460,8 @@
           <hr>
           <div class="col-md-6">
             <div class="card">
-              <img src="https://ti.pnp.ac.id/wp-content/uploads/2024/07/pkm.jpg" class="card-img-top" alt="Kegiatan Audit Mutu">
+              <img src="https://ti.pnp.ac.id/wp-content/uploads/2024/07/pkm.jpg" class="card-img-top"
+                alt="Kegiatan Audit Mutu">
               <div class="card-body">
                 <a href="news4.html" class="card-title" style="text-decoration:none">Kegiatan Audit Mutu Internal (AMI)
                   di Jurusan Teknologi Informasi Politeknik Negeri Padang</a>
@@ -456,7 +471,8 @@
           </div>
           <div class="col-md-6">
             <div class="card">
-              <img src="https://ti.pnp.ac.id/wp-content/uploads/2024/07/hack4.png" class="card-img-top" alt="Kegiatan Audit Mutu">
+              <img src="https://ti.pnp.ac.id/wp-content/uploads/2024/07/hack4.png" class="card-img-top"
+                alt="Kegiatan Audit Mutu">
               <div class="card-body">
                 <a href="news4.html" class="card-title" style="text-decoration:none">Kegiatan Audit Mutu Internal (AMI)
                   di Jurusan Teknologi Informasi Politeknik Negeri Padang</a>

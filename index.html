@@ -117,7 +117,7 @@
       </div>
     </div>
   </div>
-
+  
   <div class="container">
 
     <!-- Card type 1 -->
@@ -340,6 +340,31 @@
       </div>
     </div>
   </div>
+
+  <!-- Animasi Angka -->
+  <script>
+    function animasiAngka(id, mulai, akhir, durasi) {
+        let elemen = document.getElementById(id);
+        let nilaiSekarang = mulai;
+        let jarak = akhir - mulai;
+        let kenaikan = akhir > mulai ? 1 : -1;
+        let waktuLangkah = Math.abs(Math.floor(durasi / jarak));
+
+        let timer = setInterval(function () {
+            nilaiSekarang += kenaikan;
+            elemen.innerHTML = nilaiSekarang;
+            if (nilaiSekarang === akhir) {
+                clearInterval(timer);
+            }
+        }, waktuLangkah);
+    }
+    window.onload = function () {
+        animasiAngka("mahasiswa", 1, 986, 2000); // Dari 1 ke 986 dalam 2 detik
+        animasiAngka("dosen", 1, 73, 2000);      // Dari 1 ke 73 dalam 2 detik
+        animasiAngka("lab", 1, 10, 2000);        // Dari 1 ke 10 dalam 2 detik
+        animasiAngka("prodi", 1, 8, 2000);       // Dari 1 ke 8 dalam 2 detik
+    };
+    </script>
 
 
   <!-- Mitra Kami -->
